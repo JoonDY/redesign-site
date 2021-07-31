@@ -1,7 +1,7 @@
 :root {
-  --color-light: #fff;
+  --color-light: #eee;
   --color-dark: #333;
-  --color-grey: #666;
+  --color-grey: #555;
   --color-accent: #17365d;
 
   --font-p: 1.5rem;
@@ -110,13 +110,27 @@ a:hover {
   width: 100%;
   margin: 0 auto;
   background: var(--color-grey);
-  padding: 1.5rem;
+}
+
+.hamburger {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.fa-bars {
+  font-size: 3rem;
+  color: var(--color-light);
+  margin-left: 1rem;
+  padding: 1rem 1rem;
+}
+
+.fa-bars:hover {
+  opacity: 0.5;
 }
 
 .nav-list {
   width: 100%;
-  margin: 0 auto;
-  display: none;
+  margin: 2rem auto;
   justify-content: center;
   align-items: center;
 }
@@ -125,7 +139,10 @@ a:hover {
   color: var(--color-light);
   font-size: 1.1rem;
   font-weight: 700;
-  margin-left: 2rem;
+}
+
+.nav-item {
+  padding: 1.5rem 0;
 }
 
 @media (min-width: 800px) {
@@ -165,7 +182,13 @@ a:hover {
   }
 
   .nav-item {
-    margin: 1rem 0;
+    margin: 1rem 1rem;
+    border: none;
+    padding: 0;
+  }
+
+  .hamburger {
+    display: none;
   }
 }
 
