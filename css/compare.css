@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  /* border: 1px solid red; */
+}
+
+body {
+}
+
+img {
+  max-width: 100%;
+}
+
+.flex {
+  display: flex;
+}
