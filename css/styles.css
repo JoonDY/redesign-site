@@ -43,6 +43,27 @@ a {
 
 a:hover {
   opacity: 0.5;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-size: inherit;
+  font-family: inherit;
+  display: block;
+}
+
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+strong {
+  font-weight: 900;
 }
 
 /* Containers */
@@ -126,11 +147,12 @@ a:hover {
 
 .fa-bars:hover {
   opacity: 0.5;
+  cursor: pointer;
 }
 
 .nav-list {
   width: 100%;
-  margin: 2rem auto;
+  margin: 0 auto;
   justify-content: center;
   align-items: center;
 }
@@ -145,12 +167,90 @@ a:hover {
   padding: 1.5rem 0;
 }
 
+/* Main */
+
+/* Hero */
+
+.img-container {
+  color: white;
+  position: relative;
+  background: rgb(0, 0, 0);
+  overflow: hidden;
+}
+
+.main-img {
+  max-height: 75vh;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.main-img:hover {
+  /* opacity: 1; */
+}
+
+.welcome-text {
+  font-size: 2rem;
+  position: absolute;
+  left: 4rem;
+  bottom: 2rem;
+  margin-right: 4rem;
+}
+
+.hash-tag {
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.welcome-text h2,
+.hash-tag h2 {
+  font-weight: 700;
+}
+
+/* CTA */
+
+.cta {
+  width: 95%;
+  margin: 5rem auto;
+}
+
+.membership {
+  font-size: 1.25rem;
+  margin-bottom: 5rem;
+}
+
+.membership h2 {
+  margin-bottom: 2rem;
+}
+
+.learn-more {
+  font-weight: 900;
+  background-color: var(--color-accent);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.service-img {
+  margin: 2rem auto;
+}
+
+/* Media Queries */
+
 @media (min-width: 800px) {
   .header-content {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     max-width: 70%;
+  }
+
+  .logo {
+    margin: 0;
   }
 
   .fab {
@@ -167,6 +267,20 @@ a:hover {
 
   .contact {
     justify-content: flex-end;
+  }
+
+  .hero {
+    display: block;
+  }
+
+  .services {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+  }
+
+  .service-img {
+    max-width: 32%;
   }
 }
 
@@ -189,6 +303,31 @@ a:hover {
 
   .hamburger {
     display: none;
+  }
+
+  .welcome-text {
+    font-size: 3rem;
+  }
+
+  .hash-tag {
+    display: block;
+  }
+
+  .cta {
+    width: 90%;
+  }
+
+  .membership {
+    font-size: 1.5rem;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .membership h2 {
+    margin-right: 5rem;
+    width: 50%;
   }
 }
 
