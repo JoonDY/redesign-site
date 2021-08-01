@@ -49,15 +49,16 @@ a:hover {
 img {
   max-width: 100%;
   display: block;
+  margin: 0 auto;
 }
 
-button {
+.btn {
   font-size: inherit;
   font-family: inherit;
   display: block;
 }
 
-button:hover {
+.btn:hover {
   opacity: 0.8;
   cursor: pointer;
 }
@@ -239,7 +240,81 @@ strong {
   margin: 2rem auto;
 }
 
+/* Events */
+
+.events {
+  background-color: white;
+  margin: 2rem auto;
+  padding: 5rem 0;
+}
+
+.events h2 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.tab-container {
+  width: 95%;
+  margin: 2rem auto;
+  border: 5px solid var(--color-accent);
+  border-radius: 5px;
+  /* background-color: var(--color-accent); */
+}
+
+.event-tabs {
+  display: flex;
+  width: 100%;
+}
+
+.event-tabs .btn {
+  width: 100%;
+  border: none;
+  padding: 1rem 1rem;
+  background-color: var(--color-accent);
+  color: white;
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+.current-event-img img,
+.event-calendar img {
+  width: 100%;
+}
+
+/* Footer */
+
+/* Footer Contacts */
+
+.footer-info {
+  background-color: var(--color-dark);
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem 0;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.footer-title {
+  color: #f7bd63;
+}
+
+.footer-item {
+  margin: 2rem;
+}
+
+/* Copyright */
+
+.footer-copyright {
+  background-color: #111;
+  padding: 1rem 0;
+  color: white;
+}
+
 /* Media Queries */
+
+/* 800px */
 
 @media (min-width: 800px) {
   .header-content {
@@ -282,7 +357,32 @@ strong {
   .service-img {
     max-width: 32%;
   }
+
+  .tab-container {
+    width: 75%;
+  }
+
+  .events h2 {
+    font-size: 3rem;
+  }
+
+  .footer-info {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+    gap: 2rem;
+  }
+
+  .footer-copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+  }
 }
+
+/* 1200px */
 
 @media (min-width: 1200px) {
   .tel-span {
@@ -329,10 +429,20 @@ strong {
     margin-right: 5rem;
     width: 50%;
   }
+
+  .tab-container {
+    width: 50%;
+  }
 }
+
+/* 1600px */
 
 @media (min-width: 1600px) {
   .nav-list {
     display: flex;
+  }
+
+  .tab-container {
+    width: 40%;
   }
 }
