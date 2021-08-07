@@ -1,5 +1,8 @@
 ## Redesign Website
 
+### Example
+[Link](https://nifty-neumann-c8ae0d.netlify.app/)
+
 ### Main Changes
 
 - Fix Navbar
