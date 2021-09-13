@@ -1,7 +1,8 @@
 ## Redesign Website
 
-### Example
-[Link](https://nifty-neumann-c8ae0d.netlify.app/)
+### Live Overview
+
+Example: [Comparison](https://nifty-neumann-c8ae0d.netlify.app/)
 
 ### Main Changes
 
