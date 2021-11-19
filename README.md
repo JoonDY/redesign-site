@@ -1,5 +1,5 @@
 ## Redesign Website
-### Live Overview: [Comparison](https://nifty-neumann-c8ae0d.netlify.app/)
+**Live Overview: [Comparison](https://nifty-neumann-c8ae0d.netlify.app/)**
 Examining a company's website and understanding the potential changes that could be made in order for a better user experience.
 
 ## Main Changes
